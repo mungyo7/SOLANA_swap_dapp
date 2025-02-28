@@ -104,7 +104,7 @@ async function main() {
     const wallet = new Wallet(
         Keypair.fromSecretKey(
             bs58.decode(
-                '4kaC1qWKqkzsP9L644AzFoyeodCTyDKLeRTrbFR92mxdgUDBQaAU4e3bwR93dHdAp5B7mZPykZ6d8Uj2TSMF67nh'
+                process.env.PRIVATE_KEY
             )
         )
     );
